@@ -1,13 +1,13 @@
-# 🌊 FD-YOLOv8: Enhanced YOLOv8 for Floating Object Detection on Water Surfaces
+# 🌊 FOD-YOLOv8: Enhanced YOLOv8 for Floating Object Detection on Water Surfaces
 
-FD-YOLOv8 is an improved YOLOv8-based detection framework designed for **robust and precise detection of floating objects on water surfaces**.  
+FOD-YOLOv8 is an improved YOLOv8-based detection framework designed for **robust and precise detection of floating objects on water surfaces**.  
 The model enhances YOLOv8n through three key structural modules — **SPDConv**, **CSP_DCNv2CoordConv**, and **C2S_Upsample** — to address challenges such as small-object loss, reflection interference, and multi-scale feature degradation.
 
 ---
 
 ## 🔍 Model Overview
 
-To address the challenges of small-object detection, visual similarity, and complex water-surface disturbances, our model introduces three key structural improvements based on YOLOv8n — forming the **FD-YOLOv8 architecture**:
+To address the challenges of small-object detection, visual similarity, and complex water-surface disturbances, our model introduces three key structural improvements based on YOLOv8n — forming the **FOD-YOLOv8 architecture**:
 
 ### 1️⃣ SPDConv Module (Sparse and Dynamic Convolution)
 Enhances contextual feature extraction through multi-branch sparse convolution and adaptive fusion.  
@@ -21,21 +21,21 @@ This combination allows the model to adjust to irregular object shapes and illum
 Achieves **cross-scale feature fusion** and **super-resolution reconstruction** during upsampling.  
 By reorganizing multi-level features and preserving high-frequency information, it enhances detection performance on **small and distant floating objects**, maintaining clear boundaries and high confidence even under multi-angle perspectives.
 
-> Together, these three modules enable FD-YOLOv8 to achieve superior precision, recall, and mAP performance compared to standard YOLOv8n, with improved robustness in small-object detection, reflection suppression, and class discrimination across diverse water environments.
+> Together, these three modules enable FOD-YOLOv8 to achieve superior precision, recall, and mAP performance compared to standard YOLOv8n, with improved robustness in small-object detection, reflection suppression, and class discrimination across diverse water environments.
 
 ---
 
 <div align="center">
-  <img width="1000" alt="FD-YOLOv8 Framework" src="https://github.com/user-attachments/assets/5e05bb55-cf37-4e4e-87b3-4f51703a517f" />
+  <img width="1000" alt="FOD-YOLOv8 Framework" src="https://github.com/user-attachments/assets/5e05bb55-cf37-4e4e-87b3-4f51703a517f" />
   <br>
-  <em>Figure 1. Overall framework of FD-YOLOv8 showing backbone, neck, and enhanced modules.</em>
+  <em>Figure 1. Overall framework of FOD-YOLOv8 showing backbone, neck, and enhanced modules.</em>
 </div>
 
 ---
 
 ## 🧩 Model Architecture
 
-The main components of **FD-YOLOv8** are illustrated below.
+The main components of **FOD-YOLOv8** are illustrated below.
 
 <div align="center">
   <img width="1000" alt="SPDConv Module" src="https://github.com/user-attachments/assets/485d8ed1-15a2-4c96-a805-6923fefb1fe7" />
@@ -79,7 +79,7 @@ The dataset used in this study includes **12,000 labeled images** of eight major
 - Split ratio: **Train 70% / Val 20% / Test 10%**
 ## 📦 Dataset & Code Access
 
-The repository includes core implementation code and dataset references for FD-YOLOv8.
+The repository includes core implementation code and dataset references for FOD-YOLOv8.
 The dataset and code can be accessed via Baidu Cloud:
 
 🔗 Link: https://pan.baidu.com/s/1609oL4m8EkIzFu_JmccuMA?pwd=srx6
